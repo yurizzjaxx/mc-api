@@ -7,7 +7,7 @@ from time import strftime, localtime, sleep
 
 
 def getUser(name):
-    api_url = f"https://japi.rest/minecraft/v1/username/{name}"
+    api_url = f"https://api.mojang.com/users/profiles/minecraft/{name}"
 
     response = requests.get(api_url)
     data = response.json()
