@@ -11,7 +11,7 @@ def getUser(name):
 
     response = requests.get(api_url)
     data = response.json()
-    user = data.get("data", {})
+    user = data
 
     mcId = user.get("id")
     mcName = user.get("name")
